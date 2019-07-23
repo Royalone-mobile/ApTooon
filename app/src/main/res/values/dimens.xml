@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="splash2text">20sp</dimen>
+    <dimen name="splash2text1">16sp</dimen>
+    <dimen name="splash2text2">12sp</dimen>
+    <dimen name="signbuttontext">16sp</dimen>
+    <dimen name="signinbuttonmargin">16sp</dimen>
+    <dimen name="padding">12dp</dimen>
+    <dimen name="manage_profile">16sp</dimen>
+</resources>

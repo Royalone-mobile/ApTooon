@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"
+        android:background="@drawable/signup_main_bg"
+        android:layoutDirection="ltr">
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="12dp"
+                        android:src="@drawable/aptoon"/>
+
+                <ImageView
+                        android:id="@+id/imRightMenu"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentEnd="true"
+                        android:padding="12dp"
+                        android:src="@drawable/falter"/>
+
+                <LinearLayout
+                        android:id="@+id/liRightMenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/imRightMenu"
+                        android:background="#1AFFFFFF"
+                        android:layout_marginLeft="52dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="12dp"
+                        android:paddingBottom="8dp"
+                        android:visibility="gone">
+                    <android.support.v7.widget.RecyclerView
+                            android:id="@+id/category_fillter"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:nestedScrollingEnabled="true"
+                            android:orientation="horizontal"
+                            android:layoutAnimation="@anim/layout_animation_fall_down"
+                            app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+                    </android.support.v7.widget.RecyclerView>
+                    <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="8dp"
+                    android:text="Movies"
+                    android:textAlignment="center"
+                    android:textColor="#D6FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="8dp"
+                    android:text="TV Shows"
+                    android:textAlignment="center"
+                    android:textColor="#D6FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="8dp"
+                    android:text="Kids"
+                    android:textAlignment="center"
+                    android:textColor="#D6FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />-->
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/ivupperbanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_alignParentEnd="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/home_image"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:background="@drawable/home_image_gredient"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/tvbannertitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="24dp"
+                            android:paddingTop="8dp"
+                            android:paddingEnd="24dp"
+                            android:paddingBottom="8dp"
+                            android:text="Jumanji"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="24sp"
+                            android:textStyle="normal"/>
+
+                    <TextView
+                            android:id="@+id/tvBannerdis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="24dp"
+                            android:paddingTop="8dp"
+                            android:paddingEnd="24dp"
+                            android:paddingBottom="8dp"
+                            android:text="Welcome to the jungle is having an amazing run at the box office"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="16sp"
+                            android:textStyle="normal"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#080808">
+
+                <LinearLayout
+                        android:id="@+id/lladdtolist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                    <ImageView
+                            android:id="@+id/imAddToList"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:padding="8dp"
+                            android:src="@drawable/add_to_list"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add to list"
+                            android:textColor="#C5C5C5"
+                            android:textSize="15sp"
+                            android:textStyle="normal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/llplay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_centerInParent="true"
+                        style="@style/btn_stand"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="16dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Play"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="normal"/>
+
+                    <ImageView
+                            android:id="@+id/imLike"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:padding="12dp"
+                            android:src="@drawable/play_arrow"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/home_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                    <ImageView
+                            android:id="@+id/home_info1"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:padding="10dp"
+                            android:src="@drawable/info"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="info"
+                            android:textColor="#C5C5C5"
+                            android:textSize="15sp"
+                            android:textStyle="normal"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/view_main_bg"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/lists_main_bg"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="24dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="24dp"
+                        android:paddingBottom="8dp"
+                        android:text="Previews"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="15sp"
+                        android:textStyle="normal"/>
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvPreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:scrollbars="vertical"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvMainHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:nestedScrollingEnabled="true"
+                        android:scrollbars="vertical"
+                        android:layoutAnimation="@anim/layout_animation_fall_down"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="24dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="24dp"
+                        android:paddingBottom="8dp"
+                        android:text="Now available"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="15sp"
+                        android:textStyle="normal"/>
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvNowAvailable"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:scrollbars="vertical"
+                        android:layoutAnimation="@anim/layout_animation_fall_down"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

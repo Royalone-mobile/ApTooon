@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layoutDirection="ltr"
+              android:background="#00000000"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:id="@+id/relStart"
+                android:layout_width="112dp"
+                android:layout_height="72dp"
+                android:layout_margin="4dp">
+
+            <ImageView
+                    android:id="@+id/imMainThumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#A4000000" />
+
+            <ImageView
+                    android:id="@+id/imMainDownload"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/play_circle"
+                    android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/relEnd"
+                android:layout_toEndOf="@+id/relStart"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tvTitle"
+                    android:textStyle="normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="2dp"
+                    android:text="Lorem ipsum is"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+            <TextView
+                    android:textStyle="normal"
+                    android:id="@+id/tvType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="2dp"
+                    android:text="42 Min"
+                    android:textColor="#969696"
+                    android:textSize="15sp" />
+
+            <TextView
+                    android:textStyle="normal"
+                    android:id="@+id/tvdis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="2dp"
+                    android:maxLines="2"
+                    android:text="Lorem ipsum is simply dummy text of the printing and"
+                    android:textColor="#BDBDBD"
+                    android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/relEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true">
+
+            <ImageView
+                    android:id="@+id/imDownload"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:padding="2dp"
+                    android:src="@drawable/download" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

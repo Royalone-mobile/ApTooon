@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.Dashboard"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:gravity="bottom">
+    <com.aptoon.view.adapter.NonSwipeableViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabLayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabBackground="@color/tab_bg"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            app:tabTextColor="@color/white"
+            android:textAlignment="center"
+            android:textDirection="ltr"
+            app:tabSelectedTextColor="@color/red"
+            app:tabIndicator="@null"
+            app:tabTextAppearance="@style/CustomTextAppearanceTab"
+            android:layout_height="wrap_content">
+        </android.support.design.widget.TabLayout>
+
+
+</RelativeLayout>

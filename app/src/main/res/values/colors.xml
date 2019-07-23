@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#707070</color>
+    <color name="white">#F5F3F4</color>
+    <color name="signbg">#080808</color>
+    <color name="red">#F44336</color>
+    <color name="black">#030303</color>
+    <color name="more_background">#181515</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="view_line_color">#373636</color>
+    <color name="search_color">#484848</color>
+    <color name="date_color">#66FCF9F9</color>
+    <color name="description_color">#99FCF9F9</color>
+    <color name="tab_bg">#010100</color>
+    <color name="switchTrack">#ffd600</color>
+    <color name="switchTrackDisable">#90caf9</color>
+    <color name="switchTrackActive">#1565c0</color>
+    <color name="switchTrackNormal">#90caf9</color>
+    <color name="switchThumbBgActive">#1b5e20</color>
+    <color name="switchThumbActive">#ad1457</color>
+    <color name="switchThumbkNormal">#64b5f6</color>
+    <color name="blue">#0B87EE</color>
+    <color name="option_pressed">#e9e4e4</color>
+    <color name="option_text_pressed">#000000</color>
+    <color name="option_text">#080808</color>
+
+    <color name="kprogresshud_default_color">#b1000000</color>
+    <color name="kprogresshud_grey_color">#449E9E9E</color>
+</resources>
